@@ -1,0 +1,39 @@
++-----------------------------------+
+|          web-engineer             |    Responsible for developing, deploying, and monitoring the static website.
++-----------------------------------+
+               |
+               v
++-----------------------------------+
+|         Version Control           |    Manages source code for collaboration and versioning.
+|         System (Github)           |
++-----------------------------------+
+               |
+               v
++-----------------------------------+
+|         Build Automation          |    Automates build, test, and deployment processes.
+|       Tools (Circle CI)      |
++-----------------------------------+
+               |
+               v
++-----------------------------------+
+|            Amazon S3              |    Stores static website content.
+|    (Static Website Deployment)    |
++-----------------------------------+
+               |
+               v
++-----------------------------------+
+|       Amazon CloudFront           |     Delivers website content globally via a CDN.
+|    (Content Delivery Network)     |
++-----------------------------------+
+               |
+               v
++-----------------------------------+
+|        AWS CloudWatch             |     Monitors and alerts for infrastructure health and performance.
+|     (Monitoring & Alerting)       |
++-----------------------------------+
+               |
+               v
++-----------------------------------+
+|             Prometheus            |     Collects, queries, and visualizes metrics for advanced monitoring and analysis.
+|  (Monitoring & Alerting Toolkit)  |
++-----------------------------------+
