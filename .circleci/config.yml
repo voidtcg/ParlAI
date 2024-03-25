@@ -257,12 +257,30 @@ commands:
       - store_test_results:
           path: test-results
 
+  deploy_infrastructure:
+    docker:
+      - image: circleci/python:3.9 # assuming npm is this image
+    working_directory: ~/infra
+    steps:
+      - checkout
+      - run:
+          name: Install AWS CDK and dependencies
+          # command: npm install -g aws-cdk
+      - run:
+          name: Synthesize AWS CDK stacks
+          # command: cdk synth
+      - run:
+          name: Deploy AWS CDK stacks
+          # command: cdk deploy --require-approval never
+
   website:
     description: Build (and possibly deploy) the website
     parameters:
       deploy:
         type: boolean
         default: false
+    docker:
+      - image: cimg/python:3.9
     steps:
       - checkout
       - fixgit
@@ -460,6 +478,10 @@ workflows:
           filters:
             branches:
               ignore: main
+      - deploy_infrastructure:
+          filters:
+            branches:
+              only: main
       - deploy_website:
           filters:
             branches:
