@@ -16,4 +16,4 @@
 
 - I really wanted to update the repo to current python standards, ie using poetry.
 - Not overbuilding the ci solution, especially when there are so many things that can be optimized.
-- Not overbuilding the infra, wanted to make sure its simple enough to understand and smart enough not to blindly deploying, code should be  intentional.
+- Not overbuilding the infra, wanted to make sure its simple enough to understand and smart enough not to blind deploy, code should be intentional.
